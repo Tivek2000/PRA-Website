@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deelopdracht 3 - PRA Website</title>
+    <link rel="stylesheet" type="text/css" href="css/deelopdrachtdrie.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">Deelopdracht 3</h1>
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="deelopdrachttwee.html">Deelopdracht 2</a></li>
+                    <li class="nav-item"><a href="deelopdrachtdrie.html">Deelopdracht 3</a></li>
+                    <li class="nav-item"><a href="deelopdrachtvier.html">Deelopdracht 4</a></li>
+                    <li class="nav-item"><a href="deelopdrachtvijf.html">Deelopdracht 5</a></li>
+                    <li class="nav-item"><a href="naslag.html">Naslag</a></li>
+                    <li class="nav-item"><a href="cheatsheet.html">Cheat sheet</a></li>
+                    <li class="nav-item"><a href="reflectie.html">Reflectie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.1: Links of rechts</h2>
+            <ol class="info-list">
+                <li><strong>Stap 1:</strong> Open het project <a href="https://makecode.microbit.org/_RVkawWMHhE1W" target="_blank">hier</a> en druk op “Edit code”.</li>
+                <li><strong>Vraag 1:</strong> Wat gebeurt er wanneer je de micro:bit start?<br><span class="answer">Antwoord: Je ziet een stipje.</span></li>
+                <li><strong>Vraag 2:</strong> Wat gebeurt er wanneer je op één van de knoppen drukt?<br><span class="answer">Antwoord: Er wordt een plaatje weergegeven.</span></li>
+                <li><strong>Vraag 3:</strong> Wat zou er gebeuren wanneer je op de A-en de B-knop tegelijkertijd zou drukken?<br><span class="answer">Antwoord: Wanneer je de micro:bit in je handen hebt, is het heel eenvoudig om op beide knoppen tegelijkertijd te drukken. Online is dat wat lastiger; hoe kun je met één muis twee knoppen tegelijkertijd indrukken? Gelukkig is hier goed over nagedacht.</span></li>
+                <li><strong>Stap 2:</strong> Ga in het project naar Input en sleep een ‘on button A pressed’ naar het scherm met opdrachten.</li>
+                <li><strong>Vraag 4:</strong> Wat gebeurt er nadat je dit blok hebt toegevoegd en op A+B hebt ingesteld?<br><span class="answer">Antwoord: Dan moet je A+B klikken om het te activeren.</span></li>
+                <li><strong>Vraag 5:</strong> Wat gebeurt er wanneer je op de A+B-knop drukt?<br><span class="answer">Antwoord: Dat komt er een plaatje.</span></li>
+                <li><strong>Vraag 6:</strong> Waarom gebeurt dit?<br><span class="answer">Antwoord: Omdat je de code hebt vertelt LEDs te laten zien wanneer je op een bepaalde knop klikt.</span></li>
+                <li><strong>Stap 4:</strong> We hebben een extra controle nodig in het IF-blok. Druk hiervoor op het plus-teken onderaan het if-blok. Er komt nu een leeg ‘else if’-blok bij.</li>
+                <li><strong>Vraag 7:</strong> Waar moet de code komen die controleert of de A-én de B-knop worden ingedrukt? Waarom kan dit niet in het ‘else if’-blok dat net is gemaakt?<br><span class="answer">Antwoord: Die moet erbij staan en die kan niet in het else if blok omdat dat is als het een andere rit gebeurt dus dat is niet hoe het werkt.</span></li>
+                <li><strong>Stap 5:</strong> Pas het programma zo aan, dat wanneer de A-en B-knop allebei worden ingedrukt, de micro:bit een horizontale lijn in het midden van de micro:bit toont.</li>
+                <li><strong>Vraag 8:</strong> Waarom gebeurt dit?<br><span class="answer">Antwoord: Omdat je de LEDs hebt veranderd.</span></li>
+                <li><strong>Stap 6:</strong> We hebben een extra controle nodig in het IF-blok. Druk hiervoor op het plus-teken onderaan het if-blok. Er komt nu een leeg ‘else if’-blok bij.</li>
+                <li><strong>Vraag 9:</strong> Waar moet de code komen die controleert of de A-én de B-knop worden ingedrukt? Waarom kan dit niet in het ‘else if’-blok dat net is gemaakt?<br><span class="answer">Antwoord: Onder de code dat je A+B moet klikken.</span></li>
+                <li><strong>Stap 7:</strong> Pas het programma zo aan, dat wanneer de A-en B-knop allebei worden ingedrukt, de micro:bit een horizontale lijn in het midden van de micro:bit toont.</li>
+            </ol>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.2: Rock, paper, scissors</h2>
+            <ol class="info-list">
+                <li><strong>Stap 1:</strong> Ga naar <a href="https://makecode.microbit.org/_4TH01H7j33P" target="_blank">hier</a> en druk op “Edit code”. Hier zie je een applicatie die nog niet af is. Bekijk en test de applicatie, voordat je verder gaat.</li>
+                <li><strong>Vraag 1:</strong> Wat is de output als je op knop A drukt?<br><span class="answer">Antwoord: Niks.</span></li>
+                <li><strong>Stap 2:</strong> Teken in het bovenste blok een steen, in het tweede blok een vel papier en in het derde blok een schaar.</li>
+                <li><strong>Vraag 2:</strong> Wat gebeurt er nu wanneer je op de A-knop drukt?<br><span class="answer">Antwoord: Je krijgt een van de 3 plaatjes willekeurig toegewezen.</span></li>
+                <li><strong>Vraag 3:</strong> Bekijk de code. Wanneer toont de micro:bit een steen, nadat je op de A-knop hebt gedrukt? En wanneer een vel papier?<br><span class="answer">Antwoord: Het is random.</span></li>
+                <li><strong>Vraag 4:</strong> In de code zie je het if-statement ‘if randomNumber = 1 then’ en iets naar beneden ‘else if randomNumber = 2 then’. Wat is het verschil tussen if en else if?<br><span class="answer">Antwoord: If = als en else if is “en anders als”.</span></li>
+                <li><strong>Vraag 5:</strong> Waarom zie je voor de schaar helemaal geen if-statement staan?<br><span class="answer">Antwoord: Als het randomnumber 3 is.</span></li>
+                <li><strong>Vraag 6:</strong> Wanneer wordt de code in het ‘else’-blok uitgevoerd?<br><span class="answer">Antwoord: Als het randomnumber 3 is.</span></li>
+            </ol>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.3: Variabelen, loops en ifs</h2>
+            <ol class="info-list">
+                <li><strong>Vraag 1:</strong> Beschrijf in je eigen woorden wat een if-statement is. Waarom zijn if-statements belangrijk tijdens het programmeren?<br><span class="answer">Antwoord: Zodat je een bepaald iets kan uitvoeren op een bepaalde voorwaarde.</span></li>
+                <li><strong>Vraag 2:</strong> Wat is het verschil tussen ‘if’ en ‘else if’?<br><span class="answer">Antwoord: If = als en else if is “en anders als”.</span></li>
+                <li><strong>Vraag 3:</strong> Wanneer wordt de code in een ‘else’-blok uitgevoerd?<br><span class="answer">Antwoord: Na een bepaalde voorwaarde of conditie.</span></li>
+                <li><strong>Vraag 4:</strong> Bekijk de code hieronder. ‘cijfer’ is groter dan tien én groter dan vijf. Wat wordt de output van de micro:bit? Waarom?<br><span class="answer">Antwoord: 10, want die is het hoogste en dichtbij de variable set cijfer to 12.</span></li>
+                <li><strong>Vraag 5:</strong> Welke verschillende loops ken je?<br><span class="answer">Antwoord: Repeat, while, every.</span></li>
+                <li><strong>Vraag 6:</strong> Wat is het grootste verschil tussen een ‘repeat’ en een ‘for index 0 to’ (forloop)?<br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Loop Type</th>
+                                <th>Een repeat blijft zichzelf herhalen no matter what die andere niet</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li><strong>Vraag 7:</strong> Wanneer gebruik je een ‘for element value of list’-loop (foreach-loop)?<br><span class="answer">Antwoord: Als je meerdere condities hebt.</span></li>
+                <li><strong>Vraag 8:</strong> Bekijk de code hieronder. Hoe vaak wordt het ‘show string’-commando uitgevoerd door de micro:bit?<br><span class="answer">Antwoord: Het aantal keer dat het commando in de loop wordt aangeroepen.</span></li>
+                <li><strong>Vraag 9:</strong> Wanneer gebruik je een ‘while’-loop?<br><span class="answer">Antwoord: Wanneer iets onder een bepaalde conditie valt.</span></li>
+                <li><strong>Vraag 10:</strong> Wat is een variabele? Waarom heb je variabelen nodig?<br><span class="answer">Antwoord: Een variabele is een eigen string/ding dat je aanmaakt om dingen bij te houden en te ordenen en duidelijk te maken.</span></li>
+                <li><strong>Vraag 11:</strong> Waarom is het belangrijk om te weten wat je in een variabele wilt opslaan?<br><span class="answer">Antwoord: Omdat variabelen precies en goed gemaakt moeten zijn.</span></li>
+                <li><strong>Vraag 12:</strong> Welke datatypes kent de micro:bit voor variabelen?<br><span class="answer">Antwoord: Set en change.</span></li>
+            </ol>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Praktijkopdracht</h2>
+            <h3 class="section-subtitle">Oefening 1</h3>
+            <ol class="info-list">
+                <li><strong>Stap 1:</strong> We willen dat de micro:bit een plaatje laat zien, afhankelijk van op welke knop we drukken. Dit kan door gebruik te maken van het ‘on button A pressed’-blok, maar je kunt ook zelf herhaaldelijk controleren of de knopjes zijn ingedrukt. Open het project <a href="https://makecode.microbit.org/_Cz13UWddRMeU" target="_blank">hier</a> en druk op ‘Edit code’.</li>
+                <li><strong>Vraag 1:</strong> Druk op ‘A’. Wat gebeurt er?<br><span class="answer">Antwoord: Een drietand plaatje wordt laten zien.</span></li>
+                <li><strong>Vraag 2:</strong> Waarom gaat de drietand niet weg als ik de A-knop loslaat?<br><span class="answer">Antwoord: Omdat er staat if button A pressed. Niet dat die moet stoppen of wachten of iets, dus dan blijft die oneindig.</span></li>
+                <li><strong>Stap 2:</strong> Zet een ‘Show icon’-commando in het ‘else’-blok en kies voor een kruis.</li>
+                <li><strong>Vraag 3:</strong> Wanneer toont de micro:bit een kruis?<br><span class="answer">Antwoord: Meteen als de microbit opstart, want je moet eerst A klikken voordat de drietand komt.</span></li>
+                <li><strong>Vraag 4:</strong> Druk op het plusje onderaan het ‘if-else’ blok. Er komt nu een ‘else if’-blok bij. Wanneer wordt de code in het ‘else if’-blok uitgevoerd?<br><span class="answer">Antwoord: Meteen.</span></li>
+                <li><strong>Stap 3:</strong> Zorg ervoor dat er een vierkantje getoond wordt, wanneer je op de B-knop drukt.</li>
+                <li><strong>Vraag 5:</strong> Wat gebeurt er nu wanneer je op de A+B-knop drukt? Waarom?<br><span class="answer">Antwoord: Je krijgt een drietand.</span></li>
+                <li><strong>Vraag 6:</strong> Hieronder zie je een tabel. Vul in de tabel alle mogelijkheden die er zijn in. Het eerste voorbeeld is al gegeven.<br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Knop A</th>
+                                <th>Knop B</th>
+                                <th>Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Niet ingedrukt</td>
+                                <td>Niet ingedrukt</td>
+                                <td>Geen</td>
+                            </tr>
+                            <tr>
+                                <td>Ingedrukt</td>
+                                <td>Niet ingedrukt</td>
+                                <td>Drietand</td>
+                            </tr>
+                            <tr>
+                                <td>Ingedrukt</td>
+                                <td>Ingedrukt</td>
+                                <td>Vierkant</td>
+                            </tr>
+                            <tr>
+                                <td>Niet ingedrukt</td>
+                                <td>Ingedrukt</td>
+                                <td>Vinkje</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li><strong>Stap 4:</strong> Zorg er nu voor dat jouw micro:bit de juiste output weergeeft, wanneer je geen, één, of beide knoppen indrukt.</li>
+            </ol>
+            <h3 class="section-subtitle">Oefening 2</h3>
+            <ol class="info-list">
+                <li><strong>Stap 1:</strong> Open het project <a href="https://makecode.microbit.org/_8AFd7L40C4vi" target="_blank">hier</a> en druk op ‘Edit code’. In het project zie je drie vergelijkingen die evalueren tot ‘waar’ als de variabele ‘index’ deelbaar is door drie, vijf of drie én vijf (zie opmerkingen in het project).</li>
+                <li><strong>Vraag 1:</strong> We hoeven er nu ‘alleen’ nog voor te zorgen dat wanneer het getal deelbaar is door 3, door 5 of door 3 én 5, er iets anders getoond wordt dan het normale getal. Je kunt dit doen met drie ‘if’-blokken, of met een ‘if/else if/else’-blok. Wat is in dit geval handiger? Waarom?<br><span class="answer">Antwoord: Het beste is 2x if/else, want dan hoef je minder code te schrijven en hoeft de microbit minder checks te doen.</span></li>
+                <li><strong>Vraag 2:</strong> Je moet verschillende controles uitvoeren (is het getal deelbaar door 3, is het getal deelbaar door 5 en is het getal deelbaar door 3 én 5). Met welke kun je het beste beginnen?<br><span class="answer">Antwoord: Je kan het beste beginnen met delen door 3 én 5. Anders werkt het niet.</span></li>
+                <li><img src="img/startsetindexgetal.png" alt="Start Set Index Getal"></li>
+            </ol>
+            <h3 class="section-subtitle">Oefening 3</h3>
+            <ol class="info-list">
+                <li><strong>Vraag 1:</strong> Wat weet je nog over de LED’s op de micro:bit en x- en y-posities?<br><span class="answer">Antwoord: Top links = x0 y0, rechtsonder = x5 y5.</span></li>
+                <li><strong>Vraag 2:</strong> Met welk commando kun je een specifieke LED aan- en uitzetten?<br><span class="answer">Antwoord: Create sprite at.</span></li>
+                <li><strong>Vraag 3:</strong> Wanneer ik alle LED’s in de eerste kolom aan wil zetten, welke vier commando’s heb ik dan nodig?<br><span class="answer">Antwoord: Plot led at xy x4.</span></li>
+                <li><strong>Vraag 4:</strong> Hoe zou je deze vier commando’s met behulp van een loop in één commando uitvoeren? Welk type loop heb je hiervoor nodig?<br><span class="answer">Antwoord: While is sprite touches edge.</span></li>
+                <li><strong>Vraag 5:</strong> Wanneer je nu deze loop wilt uitvoeren voor iedere rij, hoe zou je dat doen (met behulp van een extra loop)?<br><span class="answer">Antwoord: <img src="img/setxy0plotxy.png" alt="Set XY 0 Plot XY"></span></li>
+            </ol>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.4 - Cheat sheet en reflectie</h2>
+            <p>Cheat sheet & Reflectie</p>
+            <p>Niet van toepassing. Deze staan op de bijbehorende pagina's</p>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.5: Snelkoppelingen</h2>
+            <ol class="info-list">
+                <li><strong>Stap 1:</strong> Open het project <a href="https://makecode.microbit.org/_1tkFUpHozTsc" target="_blank">hier</a> en open de editor.</li>
+                <li><strong>Vraag 1:</strong> Wat gebeurt er wanneer je het programma start?<br><span class="answer">Antwoord: Er verschijnt een snake sprite die draait wanneer het een hoek aanraakt.</span></li>
+                <li><strong>Vraag 2:</strong> In het ‘forever’-blok staat een commando ‘call blabla’. Zonder verder naar de code te kijken: Wat denk je dat het commando ‘call blabla’ doet?<br><span class="answer">Antwoord: Dit zoekt voor een blok code genaamd blabla om uit te voeren.</span></li>
+                <li><strong>Stap 2:</strong> Scroll nu een stuk naar beneden, tot je een code blok genaamd ‘function blabla’ ziet. Deze code wordt uitgevoerd wanneer je de micro:bit het commando ‘call blabla’ geeft. De code in dit blok zorgt ervoor dat de slang beweegt (als je de code nog niet begrijpt; dat geeft niet!).</li>
+                <li><strong>Vraag 3:</strong> Wat zou een betere benaming voor deze ‘snelkoppeling’ zijn, nu je weet dat dit stuk code verantwoordelijk is voor de beweging van de slang?<br><span class="answer">Antwoord: PositionSnake.</span></li>
+                <li><strong>Vraag 4:</strong> Waarom is het handig om beschrijvende namen te gebruiken voor dit soort snelkoppelingen?<br><span class="answer">Antwoord: Zo is het makkelijk om te onthouden welke snelkoppeling wat doet.</span></li>
+                <li><strong>Stap 3:</strong> Pas de naam van de functie ‘blabla’ aan, naar de naam die je bedacht hebt.</li>
+                <li><strong>Vraag 5:</strong> Wat is er nu gebeurd met het commando ‘call blabla’ in het ‘forever’-blok?<br><span class="answer">Antwoord: Deze verandert samen met het commando-blok naar de nieuwe naam.</span></li>
+                <li><strong>Vraag 6:</strong> Waarom zou je gebruik maken van dit soort blokken? Welke voordelen kun je bedenken?<br><span class="answer">Antwoord: Zo kan je code overzichtelijker maken, je kan speciale code laten runnen onder specifieke voorwaarden.</span></li>
+            </ol>
+        </section>
+        <section class="assignment-section">
+            <h2 class="section-title">Opdracht 3.6: Pixels Besturen</h2>
+            <p>Tot nu toe zijn de spellen die we hebben gemaakt redelijk eenvoudig in opzet geweest; je drukt op een knopje en de micro:bit toont een letter, cijfer of symbool als output. Dit is vergelijkbaar met hoe oude tekst-based games werkten. De computer vertelde een verhaal en gaf je daarna een beperkt aantal opties waar je uit kon kiezen. In nieuwere games krijg je veel meer keuzes; je gebruikt de inputs dan bijvoorbeeld om een “karakter” aan te sturen in plaats van voor het maken van eenvoudige keuzes. Maar hoe kom je van een het tonen van een simpel symbool tot een echte game? Hoe zorg je ervoor dat spelers meer kunnen doen in het spel? In de komende tijd gaan we aan een spel op de micro:bit werken waarbij de speler echt iets moet besturen. We zullen steeds bepaalde onderdelen van een spel bekijken en bouwen. Aan het einde heb je, als het goed is, voldoende informatie om zelf een bepaald spel te maken. In de meeste spellen bestuur jij een speler of object. Om jouw spel te kunnen maken, is het belangrijk dat we eerst leren hoe je een object kunt besturen met behulp van inputs. In deze opdracht gaan we daarom eerst proberen een pixel over het scherm te laten ‘lopen’.</p>
+
+            <h3 class="subsection-title">Stap 1:</h3>
+            <p>Open het project <a href="https://makecode.microbit.org/_VrMYF5A2iAHb" target="_blank">hier</a>, druk op “Edit code” en start de simulatie online. Veel simpeler dan dit project zijn ze er niet, je ziet als het goed is maar één opdracht: Plot 1,1.</p>
+            
+            <ol class="info-list">
+                <li><strong>Vraag 1:</strong> Wat doet het commando ‘plot’?<br><span class="answer">Antwoord: Plot zet een LED aan op een locatie.</span></li>
+                <li><strong>Vraag 2:</strong> Wat gebeurt er wanneer je de micro:bit met dit programma aanzet?<br><span class="answer">Antwoord: Er verschijnt 1 LED op locatie x1, y1.</span></li>
+                <li><strong>Vraag 3:</strong> Stel ik wil de LED in de rechterbovenhoek aan laten gaan, in plaats van de LED die nu aangaat, wat moet ik dan veranderen?<br><span class="answer">Antwoord: Je moet 'plot' op x4, y0 veranderen.</span></li>
+                <li><strong>Vraag 4:</strong> Vul in het schema hieronder de x-en y-waardes in voor die LED op de micro:bit.<br><img src="img/table3.6.png" alt="Schema van LED-waarden"></li>
+                <li><strong>Vraag 5:</strong> Ik sta op het rode punt in het overzicht hierboven. Wat is mijn x-positie? En wat is mijn y-positie?<br><span class="answer">Antwoord: x2, y2.</span></li>
+                <li><strong>Vraag 6:</strong> Ik wil naar de groene cel. Wat moeten mijn x-en y-positie worden als ik daarheen wil?<br><span class="answer">Antwoord: X4, Y4.</span></li>
+                <li><strong>Vraag 7:</strong> Wat betekent het voor de x-positie wanneer ik één stapje naar rechts wil gaan? En als ik één stapje naar links wil gaan?<br><span class="answer">Antwoord: Rechts = +1, Links = -1.</span></li>
+                <li><strong>Vraag 8:</strong> Wat gebeurt er met de y-positie wanneer ik één stapje naar links of naar rechts wil gaan?<br><span class="answer">Antwoord: De Y-positie verandert niet.</span></li>
+                <li><strong>Vraag 9:</strong> Wat betekent het voor de y-positie wanneer ik één stapje naar boven ga? En wat als ik één stapje naar beneden ga?<br><span class="answer">Antwoord: Naar boven = -1, naar beneden = +1.</span></li>
+            </ol>
+
+            <h3 class="subsection-title">Stap 2:</h3>
+            <p>Open het project <a href="https://makecode.microbit.org/_5CsYCPhEYg3A" target="_blank">hier</a> en druk op “Edit code”.</p>
+
+            <ol class="info-list">
+                <li><strong>Vraag 10:</strong> Wat gebeurt er wanneer je de game start?<br><span class="answer">Antwoord: Er verschijnt een pixel op x3, y3.</span></li>
+                <li><strong>Vraag 11:</strong> Wat gebeurt er wanneer je op de A-knop drukt?<br><span class="answer">Antwoord: De pixel gaat 1 LED naar links.</span></li>
+                <li><strong>Vraag 12:</strong> Wat gebeurt er wanneer je op de B-knop drukt?<br><span class="answer">Antwoord: Niks.</span></li>
+                <li><strong>Vraag 13:</strong> Kijk goed naar de code die in het “on button A pressed” staat. Leg in je eigen woorden uit wat de code doet.<br><span class="answer">Antwoord: Hij zet de LED uit, verandert de X-positie en zet hem daarna weer aan.</span></li>
+            </ol>
+
+            <h3 class="subsection-title">Stap 3:</h3>
+            <p>Kopieer de blokken in het ‘on button A pressed’-blok naar het ‘on button B pressed’-blok. Pas het nu zo aan dat de pixel naar rechts beweegt wanneer je op de B-knop drukt.</p>
+
+            <ol class="info-list">
+                <li><strong>Vraag 14:</strong> Start de game en druk op de A-knop tot de pixel helemaal tegen de zijkant van het scherm staat. Wat is de x-en y-positie van de pixel nu?<br><span class="answer">Antwoord: x0, y3.</span></li>
+                <li><strong>Vraag 15:</strong> Wat wordt de nieuwe waarde voor x wanneer je nu nog een keer op de A-knop drukt?<br><span class="answer">Antwoord: x-1.</span></li>
+                <li><strong>Vraag 16:</strong> Welke pixel gaat er dan aan?<br><span class="answer">Antwoord: Geen, staat niet op het schermpje.</span></li>
+                <li><strong>Vraag 17:</strong> Hoe zou je ervoor zorgen dat de pixel altijd in beeld blijft?<br><span class="answer">Antwoord: Zorgen dat X en Y niet onder 0 of boven 4 kunnen gaan.</span></li>
+            </ol>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2024 PRA Website. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

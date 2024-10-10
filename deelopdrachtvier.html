@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deelopdracht 4 - PRA Website</title>
+    <link rel="stylesheet" type="text/css" href="css/deelopdrachtvier.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">Deelopdracht 4</h1>
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="deelopdrachttwee.html">Deelopdracht 2</a></li>
+                    <li class="nav-item"><a href="deelopdrachtdrie.html">Deelopdracht 3</a></li>
+                    <li class="nav-item active"><a href="deelopdrachtvier.html">Deelopdracht 4</a></li>
+                    <li class="nav-item"><a href="deelopdrachtvijf.html">Deelopdracht 5</a></li>
+                    <li class="nav-item"><a href="naslag.html">Naslag</a></li>
+                    <li class="nav-item"><a href="cheatsheet.html">Cheat sheet</a></li>
+                    <li class="nav-item"><a href="reflectie.html">Reflectie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <!-- Previous sections omitted for brevity -->
+
+        <!-- PRA 4.1 -->
+        <section class="assignment-section">
+            <h2>PRA 4.1</h2>
+            <p><strong>Vraag 1:</strong> De sprite beweegt 1 led naar links.</p>
+            <p><strong>Vraag 2:</strong> Raar genoeg niks – maar de pixel zou verder moeten gaan buiten het veld van de microbit.</p>
+            <p><strong>Vraag 3:</strong> De sprite gaat omhoog, omlaag, links en rechts door de microbit te bewegen.</p>
+            <p><strong>Vraag 4:</strong> Er zijn helemaal geen fouten.</p>
+        </section>
+
+        <!-- PRA 4.2 -->
+        <section class="assignment-section">
+            <h2>PRA 4.2</h2>
+            <p><strong>Vraag 1:</strong> Dan zijn de X en Y coördinaten gelijk.</p>
+            <p><strong>Vraag 2:</strong></p>
+            <ul>
+                <li>In het ‘on start’-blok: Maakt een playersprite op de aangegeven coördinaten. En maak een applesprite op een random plek/random coördinaten.</li>
+                <li>In het ‘on button A-pressed’-blok: Gaat de player sprite 1 naar links.</li>
+                <li>In het ‘on button B-pressed’-blok: Gaat de player sprite 1 naar rechts.</li>
+                <li>In het ‘forever’-blok: Pauzeert kort, en beweegt daarna de applesprite met 1 coördinaat. Als de appelsprite de playersprite aanraakt, gaat de applesprite locatie X coördinaat naar een random X tussen 0 en 4, en de Y gaat naar coördinaat 0.</li>
+            </ul>
+            <p><strong>Vraag 3:</strong></p>
+            <ul>
+                <li>Wanneer je een appel vangt: De appel komt ergens random bovenin het scherm terug, wat betekent dat je hem goed hebt gevangen.</li>
+                <li>Wanneer je de appel niet vangt: De appel blijft vallen tot hij de onderkant van het scherm raakt, en daarna gebeurt er niks meer.</li>
+                <li>Wanneer je niks doet: De appel blijft gewoon vallen en verdwijnt onderaan het scherm zonder dat er iets gebeurt.</li>
+            </ul>
+
+            <p><strong>Dingen die niet goed werken of ontbreken:</strong></p>
+            <ul>
+                <li>Geen verlies als je de appel mist: Als je de appel niet vangt, gebeurt er niks. Het zou beter zijn als de speler HP verliest of het spel stopt wanneer de appel de onderkant van het scherm raakt.</li>
+                <li>Scoretelling: Er is geen score. Je zou punten kunnen verdienen elke keer dat je een appel vangt, zodat je kunt zien hoe goed je het doet.</li>
+                <li>Snelheid: De appels vallen steeds even snel. Het zou leuker zijn als de snelheid meer wordt naarmate je meer appels vangt, waardoor het spel uitdagender wordt.</li>
+                <li>Meerdere appels: Op dit moment is er maar één appel tegelijk. Het spel zou moeilijker worden als er meerdere appels tegelijk vallen.</li>
+                <li>Game over-functie: Het spel stopt nooit echt. Er zou een game over-scherm moeten verschijnen als je te veel appels mist.</li>
+            </ul>
+
+            <p><strong>Functionaliteiten om toe te voegen:</strong></p>
+            <ul>
+                <li>Levens: Voeg levens toe, zodat je niet meteen verliest als je een appel mist. Bijvoorbeeld, drie levens en als die op zijn, is het game over.</li>
+                <li>Score: Een score die laat zien hoeveel appels je hebt gevangen, zodat je je eigen record kunt verbeteren.</li>
+                <li>Moeilijkheidsgraad: Laat het spel steeds moeilijker worden door de appels sneller te laten vallen of meer appels tegelijk te laten verschijnen.</li>
+                <li>Game over-scherm: Voeg een game over-scherm toe dat komt wanneer je te veel appels mist, met een optie om opnieuw te beginnen.</li>
+            </ul>
+        </section>
+
+        <!-- PRA 4.3 -->
+        <section class="assignment-section">
+            <h2>PRA 4.3</h2>
+            <p><strong>Vraag 1:</strong> De micro:bit laat zien hoeveel graden het in een richting is gedraaid.</p>
+            <p><strong>Vraag 2:</strong> P: 3, R: 0.</p>
+            <p><strong>Vraag 3:</strong> P verandert als je de microbit naar boven en beneden kantelt. R verandert als je de microbit naar links en rechts kantelt.</p>
+            <p><strong>Vraag 4:</strong> P is negatief als je de microbit naar boven kantelt. R is negatief als je de microbit naar links kantelt.</p>
+            <p><strong>Vraag 5 & 6:</strong></p>
+            <img src="img/deelopdrvieropdr3punt1 .png" alt="PRA 4.3 Image 1">
+            <p><strong>Vraag 7:</strong> Je moet aanpassen vanaf hoeveel roll en pitch de microbit de x en y verandert.</p>
+            <img src="img/deelopdrvieropdr3punt7.png" alt="PRA 4.3 Image 2">
+        </section>
+
+        <!-- PRA 4.4 -->
+        <section class="assignment-section">
+            <h2>PRA 4.4</h2>
+            <h3>Stap 1</h3>
+            <p>Bij het toevoegen van de bubbel Sprite X (Game > Sprite X) kun je ook de volgende waardes kiezen:</p>
+            <ul>
+                <li><strong>y:</strong> De verticale positie van de sprite.</li>
+                <li><strong>x:</strong> De horizontale positie van de sprite.</li>
+                <li><strong>direction:</strong> De directie van de sprite.</li>
+                <li><strong>brightness:</strong> De helderheid.</li>
+                <li><strong>blink:</strong> Knipper.</li>
+            </ul>
+
+            <h3>Vraag 1</h3>
+            <p>Zoek op internet naar de betekenissen van deze waardes:</p>
+            <ul>
+                <li><strong>y:</strong> De verticale positie van de sprite. Dit verwijst naar de verticale coördinaat waar de sprite zich op een scherm of canvas bevindt. Het bepaalt de hoogtepositie van de sprite.</li>
+                <li><strong>x:</strong> De horizontale positie van de sprite. Dit geeft de horizontale coördinaat aan waar de sprite zich bevindt op een scherm of canvas. Het bepaalt de breedtepositie van de sprite.</li>
+                <li><strong>direction:</strong> De directie van de sprite. Dit duidt de richting aan waarin de sprite beweegt of gericht is. Het kan hoeken, rotaties of vectoren omvatten die de oriëntatie of beweging van de sprite bepalen.</li>
+                <li><strong>brightness:</strong> De helderheid. Dit staat voor de intensiteit van de verlichting of de helderheid van een sprite, vaak geassocieerd met visuele effecten zoals verlichting in games of animatie.</li>
+                <li><strong>blink:</strong> Knipper. Dit impliceert dat de sprite periodiek en herhaaldelijk aan en uit gaat, wat een knipperend effect creëert. Dit kan worden gebruikt voor visuele signalering of animatie-effecten.</li>
+            </ul>
+
+            <h3>Vraag 2</h3>
+            <p>Hier zijn de beschrijvingen van de functionaliteiten:</p>
+            <ul>
+                <li>Create sprite at x: y: Maak een nieuwe sprite op de gegeven x- en y-coördinaten.</li>
+                <li>Delete sprite: Verwijder de geselecteerde sprite uit het spel.</li>
+                <li>Sprite change x by: Verander de x-positie van de sprite met een bepaalde waarde (bijvoorbeeld, + 1).</li>
+                <li>Sprite set x to: Zet de x-positie van de sprite naar een specifieke waarde.</li>
+                <li>Remove life: Verminder je levens van de sprite met 1.</li>
+                <li>Set life: Stel de levens van de sprite in op een specifiek getal.</li>
+                <li>Set score: Zet de score op een specifiek getal.</li>
+                <li>Change score: Verander de score met een bepaalde waarde (bijvoorbeeld, + 10).</li>
+                <li>Game over: Stop het spel en show een game-over scherm.</li>
+            </ul>
+
+            <h3>Vraag 3</h3>
+            <ul>
+                <li>Sprite change x by: Dit voegt een bepaalde waarde toe aan de huidige x-positie van de sprite.</li>
+                <li>Sprite set x to: Dit stelt de x-positie van de sprite in op een specifieke waarde, no matter de huidige positie.</li>
+            </ul>
+
+            <h3>Vraag 4</h3>
+            <p>Het is handig om beide commands te hebben omdat:</p>
+            <ul>
+                <li>Set to: je de sprite naar een specifieke locatie kunt verplaatsen.</li>
+                <li>Change by: je de sprite geleidelijk kunt verplaatsen of aanpassen, wat meer dynamiek en vloeiendheid in het spel brengt.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 PRA Oefeningen - Alle rechten voorbehouden</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* home.css */
+
+/* Basisinstellingen voor de hele pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zorgt ervoor dat de body ten minste de hoogte van de viewport heeft */
+}
+
+/* Header styling */
+.site-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #0056b3;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #004085;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 64, 133, 0.6);
+}
+
+/* Main content styling */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex: 1; /* Laat de inhoud groeien om de beschikbare ruimte in te vullen */
+}
+
+.home-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+}
+
+/* Scroll animatie */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Call to Action button styling */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background-color: #28a745;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(33, 136, 56, 0.6);
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Zorgt ervoor dat de footer naar de onderkant van de pagina verschuift */
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/* Variabelen voor kleuren */
+:root {
+    --primary-color: #007BFF;
+    --hover-color: #004085;
+}
+
+.nav-item a {
+    background-color: var(--primary-color);
+}
+
+.nav-item a:hover {
+    background-color: var(--hover-color);
+}
+
+/* Responsieve styling */
+@media (max-width: 768px) {
+    .main-navigation {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}

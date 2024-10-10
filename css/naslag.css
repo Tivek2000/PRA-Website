@@ -1,0 +1,171 @@
+/* naslag.css */
+
+/* Basisinstellingen voor de hele pagina */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zorg ervoor dat de footer altijd onderaan blijft */
+}
+
+/* Header styling */
+.site-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+/* Navigation styling */
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    background-color: #0056b3;
+    border-radius: 30px;
+    font-size: 1rem;
+    min-width: 140px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #004085;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content styling */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex: 1;
+}
+
+.assignment-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* List and answer styling */
+.info-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.info-list li strong {
+    color: #007BFF;
+}
+
+.answer {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Afbeelding styling */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/* Navigatie knoppen animatie */
+.nav-item a {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-item a.active {
+    animation: pulse-animation 0.6s ease;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
